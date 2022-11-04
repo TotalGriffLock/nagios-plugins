@@ -176,7 +176,7 @@ fi
 
 # Query the Graph API to see when our app secret will need renewing
 
-expiryjson=$(curl -s -H "Content-Type: application/json" -H "Authorization: Bearer $token" "https://graph.microsoft.com/v1.0/applications/ecde8597-721a-49bb-bdbd-7e7e2bab0e91/passwordCredentials")
+expiryjson=$(curl -s -H "Content-Type: application/json" -H "Authorization: Bearer $token" "https://graph.microsoft.com/v1.0/applications/$graph_app_id/passwordCredentials")
 
 # Check cURL did not leave an exit code
 if [ $? -ne 0 ]
