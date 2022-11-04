@@ -1,3 +1,5 @@
+# checkAzureLogicApp
+
 A script to check the run history of a logic app in Azure
 It can probably be used for checking event history on nearly any kind of Azure object
 
